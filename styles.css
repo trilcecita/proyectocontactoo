@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+aside {
+    background-color: rgb(233, 226, 226);
+    padding: 30vh;
+    width: 30vh;
+}
+
+h3 {
+    padding: 15px;
+    color: white;
+    background-color: rgb(115, 0, 222);
+    font-weight: 500; 
+    text-align: center; /* Alineación centrada del título */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 100%; /* Se asegura que el formulario use el espacio disponible */
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 6px;
+    margin: 6px;
+}
+
+div:nth-child(6) { /* Cambiado a 6 porque el div de botón es el sexto */
+    display: flex;
+    justify-content: flex-end;
+}
+
+figure {
+    flex: 1;
+}
+
+img {
+    height: auto;
+    width: 25px;
+}
+
+input, select, textarea {
+    padding: 10px 3px;
+    border-radius: 3px;
+    border: solid 1px #c8c8c8;
+    margin-right: 16px;
+    flex-basis: 70vh; /* Cambiado para ajustarse mejor */
+}
+
+input:hover, select:hover, textarea:hover {
+    border: solid 1px rgb(115, 0, 222);
+}
+
+input:valid, select:valid, textarea:valid {
+    color: #272727;
+}
+
+input:invalid:not(:placeholder-shown),
+select:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+    border: solid 1px #ec1313e6;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: solid 2px #4c0d7c; 
+    outline: none;
+}
+
+textarea {
+    margin-left: 44px;
+    margin-right: 26px;
+    resize: vertical;
+    min-height: 50px;
+    max-height: 200px;
+    letter-spacing: .5px;
+    flex-basis: 100%;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    padding: 0 16px;
+    color: white;
+    background-color: rgb(115, 0, 222);
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+button:hover {
+    background-color: rgb(98, 0, 179); /* Color de hover más oscuro */
+}
